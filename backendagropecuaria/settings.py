@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'backendagropecuaria.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'agropecuariadb',
+        'NAME': 'dbagropecuaria',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'sistemas123',
         'HOST': 'localhost',   # Si la base de datos está en el mismo servidor, utiliza 'localhost'
         'PORT': '3306',        # El puerto predeterminado de MySQL es 3306
     }
@@ -116,6 +116,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+APPEND_SLASH = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
